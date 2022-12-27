@@ -1,0 +1,22 @@
+.hiddEff .info {
+    opacity: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.hiddEff:hover .info {
+    opacity: 1;
+    height: 280px;
+}
+
+.hiddEffProductCard .infoProductCard {
+    opacity: 0;
+    height: 0;
+    transition: .5s;
+}
+
+
+.hiddEffProductCard:hover .infoProductCard {
+    opacity: 1;
+    height: 380px;
+}

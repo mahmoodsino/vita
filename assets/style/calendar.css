@@ -1,0 +1,78 @@
+.fc-next-button{
+    background: transparent !important;
+    border: 0px !important;
+  }
+  .fc-prev-button{
+    background: transparent !important;
+    border: 0px !important;
+  }
+
+  .fc-icon-chevron-right{
+    color: black;
+  }
+
+  .fc-icon-chevron-left{
+    color: black;
+    
+  }
+
+
+  .fc-toolbar-chunk div {
+    display: flex;
+    align-items: center;
+  }
+
+  .fc-toolbar-chunk{
+    background: #EFF8FC;
+  }
+
+
+  .fc-header-toolbar{
+    padding-top: 10px;
+    margin-bottom: 0px;
+    /* box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1); */
+  } 
+
+
+  .fc-scrollgrid{
+    background:#EFF8FC ;
+  }  
+
+  .fc-timeGridWeek-button {
+    background:#95D2E8 !important ;
+    border: 0px !important;
+  }
+
+  .fc-timeGridDay-button{
+    background:#95D2E8 !important ;
+    border: 0px !important;
+  }
+
+  .fc-dayGridMonth-button{
+    background:#95D2E8 !important ;
+    border: 0px !important;
+  }
+
+  .fc-button-active{
+    background: #7EBDCE !important;
+  }
+
+  .fc-toolbar-title{
+    font-size: 16px !important;
+    font-weight: 500;
+  }
+  .fc-scrollgrid-section th {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important; 
+  }
+
+  .fc-col-header-cell-cushion{
+    font-size: 15px !important;
+    font-weight: 600;
+  }
+
+
+  .fc-event-time{
+    color: #42BCEB !important;
+    cursor: pointer!important;
+    text-transform: capitalize !important;
+  }
