@@ -9,7 +9,7 @@ const MainSection = () => {
       <h2 className="text-primary text-3xl font-semibold text-center py-10 tracking-wider">
         Create an Account
       </h2>
-      <form className="mt-5 w-[40%] m-auto">
+      <form className="mt-5 md:w-[70%] lg:w-[40%] m-auto">
         <SinupInput label="Email Address" type={"text"} />
         <div className="mt-5">
           <SinupInput label="Phone Number" type={"text"} />

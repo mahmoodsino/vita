@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-[#F6F6F6] my-5">
-      <div className="px-5 py-10 flex  ">
-        <img className="h-60" src="/Vitamin.png" alt="" />
+    <div className="bg-[#F6F6F6] my-5 sm:hidden md:block">
+      <div className="lg:px-5 py-10 flex  ">
+        <img className="h-60 sm:hidden lg:block" src="/Vitamin.png" alt="" />
         <img src="/made.png" alt="" />
         <div>
           <span className="block text-xl text-[#787878] font-medium">

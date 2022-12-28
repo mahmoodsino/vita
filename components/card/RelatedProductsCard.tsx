@@ -3,7 +3,7 @@ import ReactStars from "react-stars";
 
 const RelatedProductsCard = () => {
   return (
-    <div className="text-left space-y-0.5">
+    <div className="text-left space-y-0.5 mt-3">
       <div className="w-[207px] h-[224px] bg-[#c4c4c4] flex justify-end items-end">
         <img className="h-6 " src="/addshoppingcart.svg" alt="" />
       </div>

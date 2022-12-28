@@ -8,7 +8,7 @@ const Shipping = () => {
         <h3 className=" font-semibold">Shipping Address</h3>
         <span className="text-secondary">*</span>
       </div>
-      <div className="w-[87%]">
+      <div className="lg:w-[87%]">
         <form className="w-full ">
           <div className="w-full">
             <InfoInput

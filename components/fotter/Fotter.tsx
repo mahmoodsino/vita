@@ -12,9 +12,9 @@ export const routes = [
 
 const Fotter = () => {
   return (
-    <div className="border-t-2">
+    <div className="border-t-2 ">
       <div className="2xl:container m-auto  mx-10 border-b border-b-primary/50">
-        <div className="py-3 my-3 grid grid-cols-4">
+        <div className="py-3 sm:space-y-6 lg:space-y-0 my-3 grid md:grid-cols-2 lg:grid-cols-4">
           <div>
             <img className="h-32" src="/logo.png" alt="" />
           </div>

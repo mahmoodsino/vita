@@ -3,7 +3,7 @@ import { BorderButton } from "../../../buttons";
 
 const Magic = () => {
   return (
-    <div className="text-center bg-gray3 px-20 py-10 relative mt-5">
+    <div className="text-center bg-gray3 lg:px-20 sm:px-5 py-10 relative mt-5">
       <h4 className="font-semibold text-2xl text-primary ">
         VITAMINS ARE MAGIC
       </h4>
@@ -27,7 +27,7 @@ const Magic = () => {
           title="Schedule Visit"
         />
       </div>
-      <img className="absolute right-0 bottom-0" src="/nosh.png" alt="" />
+      <img className="absolute sm:hidden md:block right-0 bottom-0" src="/nosh.png" alt="" />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
+import { AccountDropDown } from "../drop-down";
 import { AccountIcon, CartIcon } from "../icons";
 
 export const routes = [
@@ -32,19 +33,26 @@ const Navbar = () => {
   }, [goingUp]);
 
   return (
-    <div className={`${goingUp && "down bg-white shadow-md fixed top-0 left-0 right-0 m-auto  z-[1000]"}`}>
-      <div className={`px-10 pt-2 flex justify-between items-center h-24 2xl:container m-auto `}>
+    <div
+      className={` ${
+        goingUp &&
+        "down bg-white shadow-md sm:hidden  md:block fixed top-0 left-0 right-0 m-auto  z-[1000]"
+      }`}
+    >
+      <div
+        className={`lg:px-10 md:px-5 pt-2 flex justify-between items-center h-24 2xl:container sm:hidden md:flex  `}
+      >
         <Link href="/" className="">
-          <img className="h-[70px]" src="/logo.png" alt="" />
+          <img className="lg:h-[70px] md:h-14" src="/logo.png" alt="" />
         </Link>
-        <div className="grow flex justify-end space-x-8 items-center">
+        <div className="grow flex justify-end md:space-x-5 lg:space-x-8 items-center">
           {routes.map((route, i) => {
             return (
               <Link
                 key={i}
                 href={route.path}
-                className={`text-gray1 font-medium tracking-wide whitespace-nowrap ${
-                  pathname.slice(1) !== route.path.slice(1) ? "" : "font-bold "
+                className={`text-gray1 md:text-sm lg:text-base font-medium tracking-wide whitespace-nowrap ${
+                  pathname.slice(1) !== route.path.slice(1) ? "" : "font-bold"
                 }`}
               >
                 {pathname.slice(1) === route.path.slice(1) && (
@@ -57,14 +65,21 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <div className="flex justify-center items-center space-x-2">
-
-          <Link href="/account" className="mt-1">
-            <AccountIcon className="fill-secondary h-[50px] " />
-          </Link>
-          <Link href="/cart" className="h-[45px] w-[45px] bg-[#d9d9d9] rounded-full flex justify-center items-center">
-            <CartIcon className="h-6 stroke-white" />
-          </Link>
+          <div className="flex justify-center items-center lg:space-x-2">
+            <div className="relative group">
+              <button className="lg:mt-1">
+                <AccountIcon className="fill-secondary md:h-9 lg:h-[50px] " />
+              </button>
+              <div className="absolute opacity-0  invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 right-4 top-[100%] ">
+                <AccountDropDown />
+              </div>
+            </div>
+            <Link
+              href="/cart"
+              className="lg:h-[45px] lg:w-[45px] md:h-8 md:w-8 bg-[#d9d9d9] rounded-full flex justify-center items-center"
+            >
+              <CartIcon className="lg:h-6 md:h-5 stroke-white" />
+            </Link>
           </div>
         </div>
       </div>

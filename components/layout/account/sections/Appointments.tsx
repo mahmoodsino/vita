@@ -32,9 +32,9 @@ const Appointments = () => {
   };
 
   return (
-    <div className="w-[75%]">
+    <div className="lg:w-[75%] sm:mt-5 lg:mt-0">
       <div className="overflow-x-auto ">
-        <div className="overflow-hidden mx-5  rounded-t-md">
+        <div className="overflow-hidden lg:mx-5  rounded-t-md">
           <table className="min-w-full ">
             <thead className="bg-[#D9D9D9] ">
               <tr className="">

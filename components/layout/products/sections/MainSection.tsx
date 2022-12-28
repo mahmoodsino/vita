@@ -7,12 +7,12 @@ const ta = ["All","Anti-Aging","Immunity & Healing","Muscle Recovery & Performan
 
 const MainSection = () => {
   return (
-    <div className='px-20 text-center py-10'>
+    <div className='lg:px-20 md:px-5 text-center py-10'>
       <h2 className='text-primary text-xl py-5 font-medium'>OUR PRODUCTS</h2>
       <div className='mt-5'>
         <Tabs data={ta} />
       </div>
-      <div className='grid grid-cols-4 mt-10'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 mt-10 gap-5'>
         <ProductsCard />
         <ProductsCard />
         <ProductsCard />

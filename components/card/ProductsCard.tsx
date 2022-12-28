@@ -4,7 +4,7 @@ import { ShoppingCart } from "../icons";
 
 const ProductsCard = () => {
   return (
-    <div className="shadow-[0px_4px_4px_rgba(216,216,216,0.4)]  text-center hiddEffProductCard relative mt-40 z-20 bg-[#F6F6F6] w-[270px] h-[380px] rounded-md">
+    <div className="shadow-[0px_4px_4px_rgba(216,216,216,0.4)]  text-center hiddEffProductCard relative mt-40 z-20 bg-[#F6F6F6] sm:w-[270px] md:w-[100%]  lg:w-[270px] h-[380px] rounded-md">
       <div className="absolute -top-[25%] z-30 w-full">
         <img className="h-44 mx-auto " src="/product.png" alt="" />
       </div>
@@ -28,7 +28,7 @@ const ProductsCard = () => {
           color2={"#00ACED"}
         />
       </div>
-      <div className="absolute w-[270px] infoProductCard h-0 opacity-0 top-0 bg-primary/50 z-40 rounded-md flex  justify-center">
+      <div className="absolute sm:w-[270px] md:w-[100%] lg:w-[270px] infoProductCard h-0 opacity-0 top-0 bg-primary/50 z-40 rounded-md flex  justify-center">
         <div className="m-auto w-[110px] h-[110px] bg-primary rounded-full   flex  justify-center shadow-[0px_4px_4px_rgba(0,0,0,0.25)] ">
           <button>
             <ShoppingCart className="m-auto" />

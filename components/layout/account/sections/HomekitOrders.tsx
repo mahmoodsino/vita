@@ -4,7 +4,7 @@ import MyOrders from "./HomekitOrders/MyOrders";
 const HomekitOrders = () => {
   const [homekitComponents, setHomeKitComponents] = useState(1);
   return (
-    <div className="w-[75%]">
+    <div className="lg:w-[75%] sm:mt-5 lg:mt-0">
       <div className="flex">
         <button
           onClick={() => setHomeKitComponents(1)}

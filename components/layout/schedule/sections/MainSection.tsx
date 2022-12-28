@@ -1,8 +1,8 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Breadcrumbs } from "../../../breadcrumbs";
 import { ScheduleSlider } from "../../../sliders";
 import ViewCalendar from "./ViewCalendar";
-import Select, { StylesConfig, ActionMeta } from "react-select";
+import Select, { StylesConfig } from "react-select";
 import { FillButton } from "../../../buttons";
 import { ScheduleModal } from "../../../Modals";
 
@@ -26,7 +26,7 @@ const optioins = [
 ];
 
 const MainSection = () => {
-  const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(false);
   const customStyles: StylesConfig<any> = {
     option: (provided, state) => ({
       ...provided,
@@ -46,7 +46,7 @@ const MainSection = () => {
   };
 
   return (
-    <div className="px-14">
+    <div className="lg:px-14 md:px-5">
       <div className="mt-10">
         <Breadcrumbs />
       </div>
@@ -58,16 +58,16 @@ const MainSection = () => {
       </div>
       <div>
         <ScheduleSlider />
-        <h3 className="font-medium text-lg py-5">
+        <h3 className="font-medium lg:text-lg py-5">
           If you are scheduling in-office visit, then your are expected to show
           up in person on the scheduled appointment.
         </h3>
       </div>
-      <div className="flex py-10 ">
-        <div className="w-[55%] border">
+      <div className="flex lg:flex-row md:flex-col py-10 ">
+        <div className="lg:w-[55%] border">
           <ViewCalendar />
         </div>
-        <div className="px-5 pl-14 w-[45%] space-y-5">
+        <div className="lg:px-5 lg:pl-14 lg:w-[45%] md:mt-5 lg:mt-0 space-y-5">
           <div>
             <label className="font-semibold px-5  ">Choose State</label>
             <div className="mt-3">
@@ -134,14 +134,15 @@ const MainSection = () => {
               </h3>
             </div>
             <div className="mt-10 flex justify-center">
-              <FillButton onClick={() => setOpenModal(true)} title="Get Appointment" />
+              <FillButton
+                onClick={() => setOpenModal(true)}
+                title="Get Appointment"
+              />
             </div>
           </div>
         </div>
       </div>
-      {openModal && 
-      <ScheduleModal open={openModal} setOpen={setOpenModal} />
-      }
+      {openModal && <ScheduleModal open={openModal} setOpen={setOpenModal} />}
     </div>
   );
 };

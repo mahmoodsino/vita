@@ -14,7 +14,7 @@ const MainSection = () => {
   const [btnAccount, setBtnAccount] = useRecoilState(AccountComponentsAtom);
 
   return (
-    <div className="flex justify-between px-20 py-14">
+    <div className="flex lg:flex-row md:flex-col justify-between lg:px-20 md:px-5 py-14">
       <AccountOptions />
       {btnAccount === 1 && <MyProfile />}
       {btnAccount === 2 && <AddressBook />}

@@ -2,7 +2,7 @@ import React from "react";
 
 const ReviewsCard = () => {
   return (
-    <div className="w-[30%] h-[380px] z-30 hover:z-50 bg-gray3 px-3 rounded-md hover:scale-110 transition-all duration-500 hover:shadow-[-4px_-4px_20px_4px_rgba(255,121,218,0.2)]">
+    <div className=" h-[380px] z-30 hover:z-50 bg-gray3 px-3 rounded-md hover:scale-110 transition-all duration-500 hover:shadow-[-4px_-4px_20px_4px_rgba(255,121,218,0.2)]">
       <img src="/quotes.svg" alt="" />
       <h4 className=" h-[210px] px-2">
         “The Weight Loss program and injections have changed my life in 30 days.

@@ -7,7 +7,7 @@ const PaymentMethod = () => {
   const [openAddModla, setOpenAddModal] = useState(false);
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   return (
-    <div className="sm:w-[100%] md:w-[65%]">
+    <div className="sm:w-[100%] lg:w-[65%] sm:mt-5 lg:mt-0">
       <div className="w-[100%] mr-20 sm:px-5 md:px-10 shadow-[0_0_5px_rgba(0,0,0,0.12)] py-5 bg-primary/20">
         <h1 className="font-bold text-xl mt-5 mb-5">Payment Method</h1>
         <div className="space-y-1 text-sm">

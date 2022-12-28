@@ -19,7 +19,7 @@ const MedicalBackground = () => {
   }
 
   return (
-    <div className="ml-20 w-full">
+    <div className="lg:ml-20 w-full">
       <div className="border rounded-lg px-5 py-10">
         <Allergies />
         <div className="mt-7 space-y-3 w-[85%]">

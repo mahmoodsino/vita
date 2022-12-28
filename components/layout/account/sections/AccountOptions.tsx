@@ -5,7 +5,7 @@ import { AccountComponentsAtom } from "../../../../helper";
 const AccountOptions = () => {
   const [btnAccount, setBtnAccount] = useRecoilState(AccountComponentsAtom);
   return (
-    <div className="bg-[#95D2E8]/20 mx-5 flex  flex-col  w-[213px]  h-fit shadow-[0_0_5px_rgba(0,0,0,0.12)] lg:py-6 ">
+    <div className="bg-[#95D2E8]/20 lg:mx-5 flex   flex-col  lg:w-[213px]  h-fit shadow-[0_0_5px_rgba(0,0,0,0.12)] lg:py-6 ">
       <button
         onClick={() => setBtnAccount(1)}
         className={`py-3 flex whitespace-nowrap lg:pl-3 px-2   ${

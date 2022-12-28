@@ -8,7 +8,7 @@ const Information = () => {
   const [step, setStep] = useRecoilState(StepperAtom);
 
   return (
-    <div className="ml-20 w-full">
+    <div className="lg:ml-20 w-full">
       <div className="border rounded-lg px-5 py-10">
         <form className="w-[78%] m-auto">
           <div className="grid grid-cols-2 gap-10">

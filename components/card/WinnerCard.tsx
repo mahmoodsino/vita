@@ -2,7 +2,7 @@ import React from "react";
 
 const WinnerCard = () => {
   return (
-    <div className="flex mx-5  py-5 px-5 rounded-xl border">
+    <div className="flex lg:mx-5  py-5 px-5 rounded-xl border">
       <img className="w-52" src="/review.png" alt="" />
       <div className="flex flex-col mt-10 ml-5">
         <span className="font-bold text-lg">Previous WINNER</span>

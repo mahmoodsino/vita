@@ -5,6 +5,7 @@ import BillingAddress from "./BillingAddress";
 import FormConsent from "./FormConsent";
 import Goal from "./Goal";
 import HomeKit from "./HomeKit";
+import HorizontalStepper from "./HorizontalStepper";
 import Information from "./Information";
 import MedicalBackground from "./MedicalBackground";
 import Pay from "./Pay";
@@ -15,10 +16,13 @@ const MainSections = () => {
   const [step, setStep] = useRecoilState(StepperAtom);
 
   return (
-    <div className="px-16 py-10">
-      <div className="flex ">
-        <div className="w-[20%]">
+    <div className="lg:px-16 md:px-5 py-10">
+      <div className="flex lg:flex-row md:flex-col ">
+        <div className="w-[20%] sm:hidden lg:block">
           <Stepper />
+        </div>
+        <div className="mb-10 sm:block lg:hidden">
+          <HorizontalStepper />
         </div>
         {step === 0 && <Goal />}
         {step === 1 && <HomeKit />}

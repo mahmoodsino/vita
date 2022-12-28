@@ -7,7 +7,7 @@ const AddressBook = () => {
   const [openModal, setOpenModal] = useState(false);
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   return (
-    <div className=" sm:w-[100%] md:w-[65%]">
+    <div className="sm:w-[100%] lg:w-[65%] sm:mt-5 lg:mt-0">
       <div className="w-[100%] mr-20  px-10 shadow-[0_0_5px_rgba(0,0,0,0.12)] py-5 bg-[#95D2E8]/20">
         <div className="flex md:flex-row sm:flex-col   sm:items-start sm:mb-5 md:mb-0 sm:justify-start md:justify-between items-center">
           <h3 className="font-bold text-xl   mb-5">Address book</h3>

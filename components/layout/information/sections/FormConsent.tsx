@@ -19,7 +19,7 @@ const FormConsent = () => {
     setImageURL(sigCanvas.current.getTrimmedCanvas().toDataURL("image/png"));
 
   return (
-    <div className="ml-20 w-full">
+    <div className="lg:ml-20 w-full">
       <div className="border rounded-lg px-5 py-10 pb-16">
         <h3 className="font-semibold">REQUIRED "HOW TO" VIDEO</h3>
         <form className="mt-5">

@@ -9,7 +9,7 @@ const Pay = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="ml-20 w-full">
+    <div className="lg:ml-20 w-full">
       <div className="border rounded-lg px-5 py-10 ">
         <div>
           <span className="font-medium">Total</span>
@@ -49,7 +49,7 @@ const Pay = () => {
         </div>
       </div>
       <div className="mt-10 flex justify-end ">
-        <LinearButton onClick={() => (setOpen(true))} title="Submit" />
+        <LinearButton onClick={() => setOpen(true)} title="Submit" />
       </div>
       {open && <ThanksForOrder open={open} setOpen={setOpen} />}
     </div>

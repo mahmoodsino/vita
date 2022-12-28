@@ -19,7 +19,7 @@ const Goal = () => {
   const [step, setStep] = useRecoilState(StepperAtom);
 
   return (
-    <div className="w-[70%] ">
+    <div className="lg:w-[70%] ">
       <div className=" border rounded-md px-10 w-full py-10">
         <h3 className=" font-semibold">
           WHAT IS/ARE YOUR MEDICAL PLAN(S)?

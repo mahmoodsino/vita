@@ -18,7 +18,7 @@ const Goals = () => {
           YOUR GOALS
         </h4>
       </div>
-      <div className="grid grid-cols-4 w-[90%] m-auto">
+      <div className="grid md:grid-cols-3 lg:grid-cols-4 md:w-[90%] sm:grid-cols-2 gap-4  m-auto">
         <GoalCard />
         <GoalCard />
         <GoalCard />

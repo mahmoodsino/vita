@@ -21,13 +21,15 @@ const data = [
   },
 ];
 
-const ta = ["All","Anti-Aging","Immunity & Healing","Muscle Recovery & Performance","Weight Loss & Energy"]
+const ta = [
+  "All",
+  "Anti-Aging",
+  "Immunity & Healing",
+  "Muscle Recovery & Performance",
+  "Weight Loss & Energy",
+];
 
 const HomeProducts = () => {
-
-
-
-
   return (
     <div className="mb-14">
       <div className="px-5 text-center pt-8">
@@ -43,10 +45,10 @@ const HomeProducts = () => {
           OUR PRODUCTS
         </h4>
       </div>
-      <div className="w-[80%] m-auto">
-      <Tabs data={ta} />
+      <div className="lg:w-[80%] md:w-[95%] m-auto sm:overflow-x-auto">
+        <Tabs data={ta} />
       </div>
-      <div className="grid grid-cols-4 w-[90%] m-auto">
+      <div className="md:grid md:grid-cols-3 gap-3 lg:grid-cols-4 w-[90%] m-auto sm:flex sm:flex-col sm:items-center">
         <ProductsCard />
         <ProductsCard />
         <ProductsCard />
@@ -56,12 +58,14 @@ const HomeProducts = () => {
         <ProductsCard />
         <ProductsCard />
       </div>
-      <div className="grid grid-cols-4 w-[85%] m-auto mt-10">
+      <div className="sm:hidden md:grid grid-cols-4 lg:w-[85%] m-auto mt-10">
         {data.map((item, i) => {
           return (
-            <div className="text-center text-gray1">
-              <span className="block text-4xl font-medium">{item.number}</span>
-              <span className="block">{item.name}</span>
+            <div key={i} className="text-center text-gray1">
+              <span className="block md:text-2xl lg:text-4xl font-medium">
+                {item.number}
+              </span>
+              <span className="block lg:text-base md:text-sm">{item.name}</span>
             </div>
           );
         })}
