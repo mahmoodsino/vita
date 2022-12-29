@@ -16,12 +16,12 @@ const MainSections = () => {
   const [step, setStep] = useRecoilState(StepperAtom);
 
   return (
-    <div className="lg:px-16 md:px-5 py-10">
+    <div className="lg:px-16 sm:px-5 py-10 sm:mt-20 md:mt-0">
       <div className="flex lg:flex-row md:flex-col ">
         <div className="w-[20%] sm:hidden lg:block">
           <Stepper />
         </div>
-        <div className="mb-10 sm:block lg:hidden">
+        <div className="mb-10 sm:hidden md:block lg:hidden">
           <HorizontalStepper />
         </div>
         {step === 0 && <Goal />}

@@ -7,10 +7,10 @@ const Allergies = () => {
         <span className=" font-semibold">Allergies</span>
         <span className="text-secondary">*</span>
       </div>
-      <div className="flex text-gray2 space-x-20 mt-5">
-        <span className=" w-[300px]">Do you have food allergy?</span>
+      <div className="flex md:flex-row sm:flex-col text-gray2 md:space-x-20 mt-5">
+        <span className=" w-[300px] sm:text-sm md:text-base">Do you have food allergy?</span>
         <form>
-          <div className="flex space-x-8">
+          <div className="flex sm:space-x-2 md:space-x-8">
             <label className="container__radio flex items-center">
               <input name="check" className="checkbox__radio" type="radio" />
               <span className="text-sm  checkmark__radio "></span>
@@ -21,16 +21,16 @@ const Allergies = () => {
               <span className="text-sm  checkmark__radio "></span>
               <span className="text-gray2 font-medium">Yes</span>
             </label>
-            <span className="border-b border-dashed w-[250px] border-b-[#A4A4A4] text-[#A4A4A4] italic">
+            <span className="border-b border-dashed w-[250px] border-b-[#A4A4A4] text-[#A4A4A4] italic sm:hidden md:block">
               Strawberry, eggs, peanut
             </span>
           </div>
         </form>
       </div>
-      <div className="flex text-gray2 space-x-20 mt-5">
-        <span className=" w-[300px]">Do you have drug allergy?</span>
+      <div className="flex  md:flex-row sm:flex-col text-gray2 md:space-x-20 mt-5">
+        <span className=" w-[300px] sm:text-sm md:text-base">Do you have drug allergy?</span>
         <form>
-          <div className="flex space-x-8">
+          <div className="flex sm:space-x-2 md:space-x-8">
             <label className="container__radio flex items-center">
               <input name="check" className="checkbox__radio" type="radio" />
               <span className="text-sm  checkmark__radio "></span>
@@ -44,10 +44,10 @@ const Allergies = () => {
           </div>
         </form>
       </div>
-      <div className="flex text-gray2 space-x-20 mt-5">
-        <span className=" w-[300px]">Do you have environmental allergy?</span>
+      <div className="flex  md:flex-row sm:flex-col text-gray2 md:space-x-20 mt-5">
+        <span className=" w-[300px] sm:text-sm md:text-base">Do you have environmental allergy?</span>
         <form>
-          <div className="flex space-x-8">
+          <div className="flex sm:space-x-2 md:space-x-8">
             <label className="container__radio flex items-center">
               <input name="check" className="checkbox__radio" type="radio" />
               <span className="text-sm  checkmark__radio "></span>

@@ -13,9 +13,9 @@ const ReviewsElement = () => {
           size={13}
           color2={"#EBD300"}
         />
-        <span className="text-xs text-gray1">01/02/2022</span>
+        <span className="md:text-xs sm:text-[10px] text-gray1">01/02/2022</span>
       </div>
-      <span className="text-sm block mt-2">
+      <span className="md:text-sm sm:text-xs block mt-2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl blandit
         massa luctus curabitur tincidunt neque, et, ornare suscipit. Dictum
         lacinia in ac sem eget. Dolor turpis dolor volutpat interdum. Convallis

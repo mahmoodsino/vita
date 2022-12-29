@@ -11,7 +11,7 @@ const ScheduleModal = ({ open, setOpen }: Props) => {
   return (
     <div>
       <Modal open={open} onClose={() => setOpen(false)} center>
-        <div className="px-10 py-4 text-center w-[450px]">
+        <div className="px-10 py-4 text-center ">
           <div className="flex justify-center">
             <img className="h-14" src="/calendartick.svg" alt="" />
           </div>

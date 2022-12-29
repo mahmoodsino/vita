@@ -5,10 +5,10 @@ import { CartIcon } from "../../../icons";
 const DetailCard = () => {
   return (
     <div>
-      <span className="text-2xl font-medium block ">
+      <span className="md:text-2xl font-medium block ">
         Lipotropic B12 Homekit w/ Telehealth Physician Consultation
       </span>
-      <div className="w-[40%] flex justify-between mt-2 items-center">
+      <div className="md:w-[40%] flex justify-between mt-2 items-center">
         <span className="text-lg font-bold">$299.00</span>
         <span className="line-through text-[#9098B1]">$320.00</span>
         <span className="text-[#33A0FF] font-bold">24% Off</span>
@@ -27,7 +27,7 @@ const DetailCard = () => {
         <button className="px-6 py-2 tracking-widest font-semibold text-white bg-pink1 my-8 rounded-full">
           START MY ONLINE VISIT OR REFILL
         </button>
-        <div className="tracking-widest w-[80%] ">
+        <div className="tracking-widest md:w-[80%] sm:text-sm md:text-base ">
           <h3>Home Kit Includes:</h3>
           <span>
             25 Activated NAD+ Injections (Nicotinamide Adenine Dinucleotide
@@ -44,12 +44,12 @@ const DetailCard = () => {
           </span>
           <button className="px-1 py-1">+</button>
         </div>
-        <div className=" flex space-x-16">
+        <div className=" flex md:flex-row sm:flex-col sm:space-y-3 md:space-y-0 md:space-x-16">
           <button className="flex font-medium items-center space-x-4 px-3 py-1 border border-black rounded-md">
             <CartIcon className="h-6 stroke-black" />
             HomeKits
           </button>
-          <button className="flex font-medium items-center space-x-4 px-3 py-1 border border-black rounded-md">
+          <button className="flex font-medium whitespace-nowrap items-center space-x-4 px-3 py-1 border border-black rounded-md">
             <CartIcon className="h-6 stroke-black" />
             Office Package
           </button>

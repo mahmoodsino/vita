@@ -19,7 +19,7 @@ const Goal = () => {
   const [step, setStep] = useRecoilState(StepperAtom);
 
   return (
-    <div className="lg:w-[70%] ">
+    <div className="lg:w-[70%] sm:w-[100%] ">
       <div className=" border rounded-md px-10 w-full py-10">
         <h3 className=" font-semibold">
           WHAT IS/ARE YOUR MEDICAL PLAN(S)?
@@ -30,7 +30,7 @@ const Goal = () => {
               <label key={i} className="container flex items-center">
                 <input name="check" className="checkbox" type="checkbox" />
                 <span className="text-sm  checkmark "></span>
-                <span className="text-gray2 font-medium">{item}</span>
+                <span className="text-gray2 font-medium whitespace-nowrap">{item}</span>
               </label>
             );
           })}

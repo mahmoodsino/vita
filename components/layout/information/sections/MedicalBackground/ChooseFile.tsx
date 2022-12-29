@@ -19,28 +19,28 @@ const ChooseFile = () => {
 
   return (
     <div>
-      <div className="mt-5 flex justify-between items-center space-x-8  w-[65%]">
+      <div className="mt-5 flex md:flex-row sm:flex-col justify-between md:items-center md:space-x-8  md:w-[65%]">
         <div>
           <h3 className=" font-semibold">Lab test results</h3>
           <span className="text-xs">Optional</span>
         </div>
-        <div className="w-[385.8px]">
+        <div className="md:w-[385.8px]">
           <div
             {...getRootProps({ onClick: (e) => e.preventDefault() })}
             className=""
           >
-            <label className="flex justify-center  w-full   transition bg-[#EAEAEA]  rounded-full  appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
-              <span className="flex items-center space-x-2">
-                <div className="flex items-center space-x-2">
-                  <h4 className="text-gray1 bg-[#D8D8D8] px-5 py-5 rounded-full font-semibold h-full  text border whitespace-nowrap">
+            <label className="flex   w-full   transition bg-[#EAEAEA]  rounded-full  appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
+              <span className="flex  items-center space-x-2">
+                <div className="flex  items-center  space-x-2">
+                  <h4 className="text-gray1  bg-[#D8D8D8] md:px-5 md:py-5 sm:px-2 sm:py-1 sm:text-sm md:text-base rounded-full md:font-semibold h-full  text border whitespace-nowrap">
                     Choose File
                   </h4>
                   {file?.name ? (
-                    <span className="text-[#888888] font-medium text-lg px-3">
+                    <span className="text-[#888888] sm:text-sm md:font-medium md:text-lg px-3">
                       {file.name}
                     </span>
                   ) : (
-                    <span className="text-[#888888] font-medium text-lg px-3 whitespace-nowrap">
+                    <span className="text-[#888888] sm:text-sm md:font-medium md:text-lg px-3 whitespace-nowrap">
                       No file chosen to upload
                     </span>
                   )}
@@ -52,17 +52,17 @@ const ChooseFile = () => {
         </div>
       </div>
       {fields.map((item, index) => (
-        <div className=" w-[72%] mt-3 flex justify-end space-x-3 ">
-          <div className="w-[385.8px]">
+        <div className=" md:w-[72%] mt-3 flex justify-end space-x-3 ">
+          <div className="md:w-[385.8px]">
             <div
               {...getRootProps({ onClick: (e) => e.preventDefault() })}
               className=""
               key={item.id}
             >
-              <label className="flex justify-center  w-full   transition bg-[#EAEAEA]  rounded-full  appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
+              <label className="flex md:justify-center  w-full   transition bg-[#EAEAEA]  rounded-full  appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
                 <span className="flex items-center space-x-2">
                   <div className="flex items-center space-x-2">
-                    <h4 className="text-gray1 bg-[#D8D8D8] px-5 py-5 rounded-full font-semibold h-full  text border">
+                    <h4 className="text-gray1 bg-[#D8D8D8] md:px-5 md:py-5 sm:px-2 sm:py-1 sm:text-sm md:text-base rounded-full md:font-semibold h-full  text border">
                       Choose File
                     </h4>
                     {file?.name ? (
@@ -70,7 +70,7 @@ const ChooseFile = () => {
                         {file.name}
                       </span>
                     ) : (
-                      <span className="text-[#888888] font-medium text-lg px-3">
+                      <span className="text-[#888888] sm:text-sm md:font-medium md:text-lg px-3">
                         No file chosen to upload
                       </span>
                     )}
@@ -86,7 +86,7 @@ const ChooseFile = () => {
           </div>
           <button
             type="button"
-            className="text-red-600 underline font-semibold text-lg"
+            className="text-red-600 underline md:font-semibold sm:text-sm md:text-lg"
             onClick={() => remove(index)}
           >
             Delete

@@ -10,8 +10,8 @@ const Information = () => {
   return (
     <div className="lg:ml-20 w-full">
       <div className="border rounded-lg px-5 py-10">
-        <form className="w-[78%] m-auto">
-          <div className="grid grid-cols-2 gap-10">
+        <form className="md:w-[78%] m-auto">
+          <div className="grid md:grid-cols-2 gap-10">
             <SinupInput label="First Name" type="text" />
             <SinupInput label="Last Name" type="text" />
           </div>

@@ -22,13 +22,13 @@ const MedicalBackground = () => {
     <div className="lg:ml-20 w-full">
       <div className="border rounded-lg px-5 py-10">
         <Allergies />
-        <div className="mt-7 space-y-3 w-[85%]">
+        <div className="mt-7 space-y-3 md:w-[85%]">
           <OccupationandMedicalH />
           <Conditions />
         </div>
         <div className="mt-5">
           <form>
-            <label className="font-semibold">
+            <label className="font-semibold sm:text-sm md:text-base">
               Are you taking any blood thinners?
               <span className="text-secondary">*</span>
             </label>

@@ -20,7 +20,7 @@ const Shipment = () => {
             </label>
         </div>
         </form>
-        <div className="w-[70%] mt-10">
+        <div className="md:w-[70%] mt-10">
             <h3 className="mb-5 font-semibold">6 Doses Vit B12 Homekit Package</h3>
             <HomeKitDetails />
 

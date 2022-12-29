@@ -6,14 +6,17 @@ const Goals = () => {
   return (
     <div className="bg-gray3 my-14 ">
       <div className="px-5 text-center py-8">
-        <span className="">Get Your Injections</span>
-        {/* <Link
+        <div className="grid grid-cols-3">
+          <div></div>
+          <span className="">Get Your Injections</span>
+          <Link
             href=""
             className="text-sm text-[#DF00A1] inline-block  items-center font-bold"
           >
             VIEW ALL
             <img className="inline-block" src="/ArrowRight.svg" alt="" />
-          </Link> */}
+          </Link>
+        </div>
         <h4 className="py-3 text-center text-2xl text-primary font-semibold">
           YOUR GOALS
         </h4>

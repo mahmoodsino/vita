@@ -12,7 +12,7 @@ const DrinkAlcohol = () => {
 
   return (
     <div>
-      <label className="font-semibold">
+      <label className="font-semibold sm:text-sm md:text-base">
         Do you drink alcohol
         <span className="text-secondary">*</span>
       </label>

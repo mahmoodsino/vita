@@ -6,11 +6,11 @@ import Reviews from "./ProductInfomation/Reviews";
 const ProductInfomation = () => {
   const [informationComponent, setInformationCompanents] = useState(1);
   return (
-    <div className="bg-[#F6F6F6] py-5 px-8 mt-8 w-[100%]">
-      <div className="flex space-x-20 border-b">
+    <div className="bg-[#F6F6F6] py-5 sm:px-3 md:px-8 mt-8 w-[100%]">
+      <div className="flex space-x-20 border-b overflow-x-auto">
         <button
           onClick={() => setInformationCompanents(1)}
-          className={`pb-5 font-medium ${
+          className={`pb-5 font-medium sm:text-sm md:text-base ${
             informationComponent === 1 &&
             "border-b-4 text-[#42BCEB] border-b-[#42BCEB]"
           }`}
@@ -19,7 +19,7 @@ const ProductInfomation = () => {
         </button>
         <button
           onClick={() => setInformationCompanents(2)}
-          className={`pb-5 font-medium ${
+          className={`pb-5 font-medium sm:text-sm md:text-base ${
             informationComponent === 2 &&
             "border-b-4 text-[#42BCEB] border-b-[#42BCEB]"
           }`}
@@ -28,7 +28,7 @@ const ProductInfomation = () => {
         </button>
         <button
           onClick={() => setInformationCompanents(3)}
-          className={`pb-5 font-medium ${
+          className={`pb-5 font-medium sm:text-sm md:text-base  ${
             informationComponent === 3 &&
             "border-b-4 text-[#42BCEB] border-b-[#42BCEB]"
           }`}

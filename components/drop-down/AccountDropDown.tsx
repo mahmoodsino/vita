@@ -3,7 +3,8 @@ import React from "react";
 
 const AccountDropDown = () => {
   return (
-    <div className="relative shadow-[4px_4px_4px_rgba(0,0,0,0.15)] bg-white text-left after:w-0 after:h-0 after:border-solid  di">
+    <div className="relative shadow-[4px_4px_4px_rgba(0,0,0,0.15)] bg-white text-left ">
+
       <div className="w-[163px] border border-[#E2E2E2] ">
         <Link
          href="/account"

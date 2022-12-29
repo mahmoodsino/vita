@@ -46,15 +46,15 @@ const MainSection = () => {
   };
 
   return (
-    <div className="lg:px-14 md:px-5">
+    <div className="lg:px-14 md:px-5 sm:mt-20 md:mt-0">
       <div className="mt-10">
         <Breadcrumbs />
       </div>
       <div className=" flex  items-center space-x-3 my-10">
-        <h3 className="font-bold whitespace-nowrap text-xl ">
+        <h3 className="font-bold whitespace-nowrap md:text-xl ">
           Schedule Appointmnet
         </h3>
-        <hr className="border w-full " />
+        <hr className="border w-full sm:hidden md:block " />
       </div>
       <div>
         <ScheduleSlider />
@@ -63,7 +63,7 @@ const MainSection = () => {
           up in person on the scheduled appointment.
         </h3>
       </div>
-      <div className="flex lg:flex-row md:flex-col py-10 ">
+      <div className="flex lg:flex-row sm:flex-col py-10 ">
         <div className="lg:w-[55%] border">
           <ViewCalendar />
         </div>

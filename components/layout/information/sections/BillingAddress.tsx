@@ -20,7 +20,7 @@ const BillingAddress = () => {
       <div className="border rounded-lg px-5 py-10">
         <Billing />
         <div className="mt-5">
-          <label className="font-semibold">
+          <label className="font-semibold sm:text-sm md:text-base">
             Billing Address Same as Shipping Address?
             <span className="text-secondary">*</span>
           </label>

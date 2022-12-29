@@ -25,9 +25,9 @@ const Pay = () => {
         </div>
         <button className="underline text-sm mt-1">+ Add new card</button>
         <div className="mt-10">
-          <h3 className="font-medium">ONE-TIME OR SUBSCRIPTION ORDER?</h3>
+          <h3 className="font-medium sm:text-sm md:text-base">ONE-TIME OR SUBSCRIPTION ORDER?</h3>
           <form>
-            <div className="flex space-x-8 mt-5">
+            <div className="flex md:flex-row sm:flex-col md:space-x-8 mt-5">
               <label className="container__radio flex items-center">
                 <input name="check" className="checkbox__radio" type="radio" />
                 <span className="text-sm  checkmark__radio "></span>

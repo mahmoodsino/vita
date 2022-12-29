@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { ProductsCard } from "../../../card";
 import { Tabs } from "../../../tabs";
@@ -33,14 +34,17 @@ const HomeProducts = () => {
   return (
     <div className="mb-14">
       <div className="px-5 text-center pt-8">
-        <span className="">Featured Injectables</span>
-        {/* <Link
+        <div className="grid grid-cols-3">
+          <div></div>
+          <span className="">Featured Injectables</span>
+          <Link
             href=""
             className="text-sm text-[#DF00A1] inline-block  items-center font-bold"
           >
             VIEW ALL
             <img className="inline-block" src="/ArrowRight.svg" alt="" />
-          </Link> */}
+          </Link>
+        </div>
         <h4 className="pt-3 text-center text-2xl text-primary font-semibold">
           OUR PRODUCTS
         </h4>

@@ -13,7 +13,7 @@ const data = [
 const Conditions = () => {
   return (
     <div className="pt-5">
-            <h3 className=" font-semibold">
+            <h3 className=" sm:text-sm md:text-base font-semibold">
               Do you have any of the following conditions?
             </h3>
             <div className=" mt-3 space-y-1">
@@ -22,7 +22,7 @@ const Conditions = () => {
                   <label key={i} className="container flex items-center">
                     <input name="check" className="checkbox" type="checkbox" />
                     <span className="text-sm  checkmark "></span>
-                    <span className="text-gray2 font-medium">{item}</span>
+                    <span className="text-gray2 font-medium whitespace-nowrap">{item}</span>
                   </label>
                 );
               })}

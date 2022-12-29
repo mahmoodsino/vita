@@ -21,7 +21,7 @@ const FormConsent = () => {
   return (
     <div className="lg:ml-20 w-full">
       <div className="border rounded-lg px-5 py-10 pb-16">
-        <h3 className="font-semibold">REQUIRED "HOW TO" VIDEO</h3>
+        <h3 className="font-semibold sm:text-sm md:text-base">REQUIRED "HOW TO" VIDEO</h3>
         <form className="mt-5">
           <label className="container__radio flex items-center">
             <input
@@ -31,7 +31,7 @@ const FormConsent = () => {
               type="checkbox"
             />
             <span className="text-sm  checkmark__radio "></span>
-            <span className="font-medium">
+            <span className="font-medium sm:text-sm md:text-base">
               I have watched the video and know how to give myself an injection
             </span>
           </label>
@@ -43,7 +43,7 @@ const FormConsent = () => {
             www.vitastir.com/howtoinject (VIDEO AVAILABLE HERE)
           </Link>
           <div className="mt-3">
-            <span className="font-semibold text-sm">
+            <span className="font-semibold md:text-sm sm:text-xs">
               I WILL FOLLOW THE INSTRUCTIONS AND DOSAGE AMOUNTS ON MY BOTTLE. I
               understand these injections are to be self injected in the area
               written on my bottle. I will watch the video to learn how to
@@ -64,7 +64,7 @@ const FormConsent = () => {
             </label>
           </div>
           <div className="mt-3">
-            <span className="font-semibold text-sm">
+            <span className="font-semibold md:text-sm sm:text-xs">
               I understand that my custom package is ordered for me. My vial or
               package I start at VITAstir will have an expiration date that is
               30 days after opening. I understand, after the 30 day period,
@@ -83,7 +83,7 @@ const FormConsent = () => {
             </label>
           </div>
           <div className="mt-3">
-            <span className="font-semibold text-sm">
+            <span className="font-semibold md:text-sm sm:text-xs">
               CONSENT FORM: I acknowledge that I have received instructions and
               educational material from VITAstir for the administration of home
               injections. I acknowledge that the risks of injections has been
@@ -118,7 +118,7 @@ const FormConsent = () => {
             </label>
           </div>
           <div className="mt-3">
-            <span className="font-semibold text-sm">
+            <span className="font-semibold md:text-sm sm:text-xs">
               I UNDERSTAND THIS IS A NON-REFUNDABLE PRODUCT AND CANNOT BE
               RETURNED. I AGREE TO THE REFUND POLICY AVAILABLE AT
               www.vitastir.com/refund-policy/ - I authorize VITAstir to charge
@@ -145,7 +145,7 @@ const FormConsent = () => {
               placeholder="John Smith"
             />
           </div>
-          <div className="w-[350px] h-[200px] mt-5">
+          <div className="md:w-[350px] md:h-[200px] mt-5">
             <div className="pb-5">
               <span className="font-semibold">SIGNATURE</span>
               <span className="text-secondary">*</span>
@@ -167,7 +167,7 @@ const FormConsent = () => {
               </button>
             </div>
           </div>
-          <div className="mt-24 w-[70%]">
+          <div className="mt-24 md:w-[70%]">
             <SinupInput
               label="Date SIGNED (mm/dd/yyyy):"
               type="text"

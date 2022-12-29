@@ -5,7 +5,7 @@ const Billing = () => {
   return (
     <div>
       <div className="flex">
-        <h3 className=" font-semibold">Billing Address</h3>
+        <h3 className=" font-semibold sm:text-sm md:text-base">Billing Address</h3>
         <span className="text-secondary">*</span>
       </div>
       <div className="lg:w-[87%]">
@@ -17,7 +17,7 @@ const Billing = () => {
               placeholder="Lorem ipsum dolor sit amet consectetur."
             />
           </div>
-          <div className="mt-3 grid grid-cols-2 gap-5">
+          <div className="mt-3 grid md:grid-cols-2 gap-5">
             <InfoInput type="text" label="City" placeholder="Lorem ipsum dol" />
             <InfoInput
               type="text"
@@ -25,7 +25,7 @@ const Billing = () => {
               placeholder="Lorem ipsum dol"
             />
           </div>
-          <div className="mt-3 grid grid-cols-2 gap-5">
+          <div className="mt-3 grid md:grid-cols-2 gap-5">
             <InfoInput
               type="text"
               label="ZIP / Postal Code"

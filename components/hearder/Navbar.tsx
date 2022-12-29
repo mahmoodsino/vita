@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { AccountDropDown } from "../drop-down";
 import { AccountIcon, CartIcon } from "../icons";
 
-export const routes = [
+const routes = [
   { path: "/", name: "HOME" },
   { path: "/about", name: "ABOUT US" },
   { path: "/services", name: "OUR SERVICES" },
@@ -40,7 +40,7 @@ const Navbar = () => {
       }`}
     >
       <div
-        className={`lg:px-10 md:px-5 pt-2 flex justify-between items-center h-24 2xl:container sm:hidden md:flex  `}
+        className={`lg:px-10 md:px-5 pt-2 m-auto  justify-between items-center h-24 2xl:container sm:hidden md:flex  `}
       >
         <Link href="/" className="">
           <img className="lg:h-[70px] md:h-14" src="/logo.png" alt="" />
@@ -70,7 +70,8 @@ const Navbar = () => {
               <button className="lg:mt-1">
                 <AccountIcon className="fill-secondary md:h-9 lg:h-[50px] " />
               </button>
-              <div className="absolute opacity-0  invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 right-4 top-[100%] ">
+              <div className="absolute opacity-0  invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 right-4 top-[80%] ">
+                <div className="triangle-with-shadow"></div>
                 <AccountDropDown />
               </div>
             </div>

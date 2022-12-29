@@ -6,7 +6,7 @@ const BreastFeeding = () => {
         <form>
 
       <div className="mt-5">
-        <label className="font-semibold">
+        <label className="font-semibold sm:text-sm md:text-base">
           Are you pregnant or breast feeding?
           <span className="text-secondary">*</span>
         </label>

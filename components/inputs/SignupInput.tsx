@@ -9,7 +9,7 @@ interface Props {
 const SinupInput = ({ label, type, placeholder }: Props) => {
   return (
     <div className="flex flex-col">
-      <label className="font-semibold" htmlFor={label}>
+      <label className="font-semibold sm:text-sm md:text-base" htmlFor={label}>
         {label} <span className="text-secondary">*</span>
       </label>
       <input

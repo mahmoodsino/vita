@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { RecoilRoot } from "recoil";
-import { Fotter, Navbar } from "../components";
+import { Fotter, MobileHeader, MobileSidebar, Navbar } from "../components";
 
 interface Props {
   children: ReactNode;
@@ -16,6 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="font-Poppins">
       <RecoilRoot>
+        <MobileSidebar />
+        <MobileHeader/>
         <Navbar />
         <MyApp>
           <Component {...pageProps} />

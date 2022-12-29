@@ -3,7 +3,7 @@ import React from 'react'
 const Recommendations = () => {
   return (
     <div>
-      <span className="text-sm">
+      <span className="sm:text-xs md:text-sm">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
         voluptates maiores dolor ratione quae a alias tenetur, iusto quia minus
         officiis! Repellendus libero est animi culpa, facere sapiente doloribus
