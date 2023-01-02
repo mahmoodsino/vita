@@ -21,7 +21,7 @@ const OccupationandMedicalH = () => {
         <SignupInput label="Past medical and surgical history" type="text" />
         <div>
           {fields.map((item, index) => (
-            <div className="w-full flex items-center  mt-3 space-x-3">
+            <div key={index} className="w-full flex items-center  mt-3 space-x-3">
               <input
                 key={item.id}
                 className="outline-none border w-full rounded-md border-dashed border-gray2/80  py-1.5 px-3"
