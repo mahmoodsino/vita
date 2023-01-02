@@ -10,7 +10,7 @@ const FormConsent = () => {
   const [imageURL, setImageURL] = useState(null);
   const [step, setStep] = useRecoilState(StepperAtom);
 
-  const sigCanvas = useRef({});
+  const sigCanvas :any = useRef({});
   const clear = () => {
     sigCanvas.current.clear();
     setImageURL(null);
@@ -21,7 +21,7 @@ const FormConsent = () => {
   return (
     <div className="lg:ml-20 w-full">
       <div className="border rounded-lg px-5 py-10 pb-16">
-        <h3 className="font-semibold sm:text-sm md:text-base">REQUIRED "HOW TO" VIDEO</h3>
+        <h3 className="font-semibold sm:text-sm md:text-base">REQUIRED HOW TO VIDEO</h3>
         <form className="mt-5">
           <label className="container__radio flex items-center">
             <input

@@ -52,7 +52,7 @@ const ChooseFile = () => {
         </div>
       </div>
       {fields.map((item, index) => (
-        <div className=" md:w-[72%] mt-3 flex justify-end space-x-3 ">
+        <div key={index} className=" md:w-[72%] mt-3 flex justify-end space-x-3 ">
           <div className="md:w-[385.8px]">
             <div
               {...getRootProps({ onClick: (e) => e.preventDefault() })}

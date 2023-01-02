@@ -57,7 +57,7 @@ const Fotter = () => {
                 </div>
               </form>
               <span className="text-secondary text-sm">
-                Get a free injection on your birthday. We'll send you a
+                Get a free injection on your birthday. We,ll send you a
                 reminder.
               </span>
             </div>
